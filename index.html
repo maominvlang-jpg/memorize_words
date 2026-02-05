@@ -1374,7 +1374,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
       fetchAudio(text, setAudioUrl, setIsLoading, setIsInternalPlaying);
     }, []);
     (0, import_react3.useEffect)(() => {
-      playAudio(word.word);
+      // playAudio(word.word);
     }, [word.word, playAudio]);
     (0, import_react3.useEffect)(() => {
       if (audioUrl) {
@@ -1404,7 +1404,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
     return /* @__PURE__ */ import_react3.default.createElement("div", { className: "p-4 pt-16 h-full flex flex-col bg-white min-h-screen relative" }, /* @__PURE__ */ import_react3.default.createElement("h2", { className: "text-xl font-bold mb-4 text-center text-gray-700" }, "\u8DDF\u6211\u5B66\u53D1\u97F3"), /* @__PURE__ */ import_react3.default.createElement("div", { className: "flex justify-between text-sm text-gray-500 border-b pb-2 mb-6" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "font-bold text-blue-600 border-b-2 border-blue-600 pb-2 -mb-2.5" }, "\u5B66\u4E00\u5B66"), /* @__PURE__ */ import_react3.default.createElement("span", null, "\u8DDF\u8BFB"), /* @__PURE__ */ import_react3.default.createElement("span", null, "\u6D4B\u4E00\u6D4B")), /* @__PURE__ */ import_react3.default.createElement("div", { className: "flex-grow overflow-y-auto pb-20" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "text-center mb-8 mt-4" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "text-5xl font-extrabold text-gray-800 mb-3 tracking-wide" }, word.word), /* @__PURE__ */ import_react3.default.createElement("div", { className: "text-gray-500 text-lg flex items-center justify-center gap-2" }, /* @__PURE__ */ import_react3.default.createElement("span", null, word.ipa), /* @__PURE__ */ import_react3.default.createElement("span", { className: "w-1 h-1 bg-gray-400 rounded-full" }), /* @__PURE__ */ import_react3.default.createElement("span", null, word.meaning))), /* @__PURE__ */ import_react3.default.createElement("div", { className: "bg-blue-50 p-5 rounded-2xl mb-6 shadow-sm border border-blue-100" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "flex items-center justify-between mb-4" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "font-bold text-blue-800 flex items-center text-sm" }, /* @__PURE__ */ import_react3.default.createElement(BookOpen, { size: 18, className: "mr-2" }), " \u5355\u8BCD\u81EA\u7136\u62FC\u8BFB\u62C6\u5206 (Phonics Segments)"), /* @__PURE__ */ import_react3.default.createElement(
       "button",
       {
-        onClick: () => playAudio(word.word),
+        onClick: () => {}, // playAudio(word.word),
         className: "text-blue-600 bg-white p-2 rounded-full shadow-sm hover:bg-blue-100 transition-colors",
         disabled: isLoading || isInternalPlaying
       },
@@ -1421,7 +1421,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
     )))), /* @__PURE__ */ import_react3.default.createElement("div", { className: "bg-yellow-50 p-5 rounded-2xl mb-6 shadow-sm border border-yellow-100" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "flex items-center justify-between mb-4" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "font-bold text-yellow-800 flex items-center text-sm" }, /* @__PURE__ */ import_react3.default.createElement(Zap, { size: 18, className: "mr-2" }), " \u5355\u8BCD\u97F3\u8282\u62C6\u5206 (Syllable Segments)"), /* @__PURE__ */ import_react3.default.createElement(
       "button",
       {
-        onClick: () => playAudio(word.word),
+        onClick: () => {}, // playAudio(word.word),
         className: "text-yellow-600 bg-white p-2 rounded-full shadow-sm hover:bg-yellow-100 transition-colors",
         disabled: isLoading || isInternalPlaying
       },
@@ -1438,7 +1438,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
     )))), /* @__PURE__ */ import_react3.default.createElement("div", { className: "bg-green-50 p-5 rounded-2xl shadow-sm border border-green-100" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "font-bold text-green-800 mb-3 text-sm flex items-center" }, /* @__PURE__ */ import_react3.default.createElement(Zap, { size: 18, className: "mr-2" }), " \u5B9E\u7528\u53E3\u8BED"), /* @__PURE__ */ import_react3.default.createElement("p", { className: "text-xl text-gray-800 mb-2 font-medium leading-relaxed" }, word.example), /* @__PURE__ */ import_react3.default.createElement("p", { className: "text-base text-gray-500 mb-3" }, word.example_zh), /* @__PURE__ */ import_react3.default.createElement(
       "button",
       {
-        onClick: () => playAudio(word.example),
+        onClick: () => {}, // playAudio(word.example),
         className: "text-green-600 bg-white p-2 rounded-full shadow-sm hover:bg-green-100 transition-colors inline-block",
         disabled: isLoading || isInternalPlaying
       },
@@ -1490,7 +1490,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
       fetchAudio(text, setUrl, setLoading, setPlaying);
     }, []);
     (0, import_react3.useEffect)(() => {
-      playAudio(word.word, setDemoAudioUrl, setIsDemoLoading, setIsDemoPlaying);
+      // playAudio(word.word, setDemoAudioUrl, setIsDemoLoading, setIsDemoPlaying);
     }, [word.word, playAudio]);
     (0, import_react3.useEffect)(() => {
       if (demoAudioUrl) {
@@ -1696,7 +1696,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
       fetchAudio(text, setAudioUrl, setIsLoading, setIsInternalPlaying);
     }, []);
     (0, import_react3.useEffect)(() => {
-      playAudio(word.word);
+      // playAudio(word.word);
     }, [word.word, playAudio]);
     (0, import_react3.useEffect)(() => {
       if (audioUrl) {
